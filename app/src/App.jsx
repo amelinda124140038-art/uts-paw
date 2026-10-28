@@ -5,9 +5,9 @@ import Beranda from './pages/Beranda.jsx'
 import Koleksi from './pages/koleksi.jsx'
 import Detail from './pages/detail.jsx'
 import Tambah from './pages/tambah.jsx'
-// import Statistik from './pages/Statistik.jsx'
-// import Tentang from './pages/Tentang.jsx'
-// import TidakDitemukan from './pages/TidakDitemukan.jsx'
+import Statistik from './pages/statistik.jsx'
+import Tentang from './pages/tentang.jsx'
+import TidakDitemukan from './pages/tidakDitemukan.jsx'
 
 export default function App() {
   return (
@@ -18,9 +18,9 @@ export default function App() {
           <Route path="/koleksi" element={<Koleksi />} />
           <Route path="/koleksi/:id" element={<Detail />} />
           <Route path="/tambah" element={<Tambah />} />
-          {/* <Route path="/statistik" element={<Statistik />} />
+          <Route path="/statistik" element={<Statistik />} />
           <Route path="/tentang" element={<Tentang />} />
-          <Route path="*" element={<TidakDitemukan />} /> */}
+          <Route path="*" element={<TidakDitemukan />} />
         </Route>
       </Routes>
     </KoleksiProvider>
