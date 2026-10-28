@@ -33,5 +33,7 @@ export default function Statistik() {
         </table>
       </div>
     </section>
-  )
+
+        )
+
 }
