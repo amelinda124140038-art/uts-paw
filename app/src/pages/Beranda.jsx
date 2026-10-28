@@ -8,16 +8,16 @@ export default function Beranda() {
 
   return (
     <section>
-      <h1>Daftar Tugas</h1>
+      <h1>Koleksi Tanaman</h1>
       <p>Tema: {mahasiswa.tema}</p>
       {loading ? (
         <p>Memuat ringkasan...</p>
       ) : (
         <p>
-          Ada {items.length} tugas dalam {jumlahKategori} kategori.
+          Ada {items.length} tumbuhan {jumlahKategori} kategori.
         </p>
       )}
-      <Link to="/koleksi">Lihat semua tugas</Link>
+      <Link to="/koleksi">Lihat semua koleksi</Link>
     </section>
   )
 }
