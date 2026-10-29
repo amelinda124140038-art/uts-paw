@@ -1,5 +1,5 @@
 // import useKoleksi from '../hooks/useKoleksi.js'
-import './Statistik.css'
+
 
 export default function Statistik() {
   const { items } = useKoleksi()
