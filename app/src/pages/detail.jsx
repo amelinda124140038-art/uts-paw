@@ -1,46 +1,47 @@
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
 
 export default function Detail() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const { items, loading, hapus } = useKoleksi()
-  const item = items.find((i) => String(i.id) === id)
+  const { koleksi, items, hapusKoleksi, hapus } = useKoleksi()
 
-  if (loading) return <p>Memuat data...</p>
+  const daftar = koleksi || items || []
+  const item = daftar.find((i) => String(i.id) === String(id))
+
   if (!item) {
     return (
-      <section>
-        <h1>Item tidak ditemukan</h1>
-        <Link to="/koleksi">Kembali ke koleksi</Link>
-      </section>
+        <div className="container">
+            <h2>Item tidak ditemukan</h2>
+            <button onClick={() => navigate('/koleksi')}>Kembali ke koleksi</button>
+        </div>
     )
+
   }
 
-  const konfirmasiHapus = () => {
-    if (window.confirm(`Hapus "${item.judul}"?`)) {
-      hapus(item.id)
-      navigate('/koleksi')
+  const handleHapus = () => {
+    if (typeof hapuskoleksi === 'function') {
+        hapusKoleksi(item.id)
+    } else if (typeof hapus === 'function') {
+        hapus(item.id)
     }
+    navigate('/koleksi')
   }
 
   return (
-    <section>
-      <h1>{item.judul}</h1>
-      <dl>
-        <dt>Kategori</dt>
-        <dd>{item.kategori}</dd>
-        <dt>Tenggat</dt>
-        <dd>{item.tenggat}</dd>
-        <dt>Prioritas</dt>
-        <dd>{item.prioritas}</dd>
-      </dl>
-      <div className="aksi">
-        <button type="button" onClick={konfirmasiHapus}>
-          Hapus
-        </button>
-        <Link to="/koleksi">Kembali</Link>
-      </div>
-    </section>
+    <div className='container'>
+        <h1>Detail Tanamann</h1>
+
+        <h2>{item.judul}</h2>
+        <p><strong>Kategori:</strong> {item.kategori}</p>
+
+        <p><strong>Nama Latin:</strong> {item.namaLatin}</p>
+        <p><strong>Frekuensi Siram:</strong> {item.frekuensiSiram}</p>
+        <p><strong>Kebutuhan Cahaya:</strong> {item.kebutuhanCahaya}</p>
+
+        <button onClick={handleHapus}>Hapus</button>
+        <button onClick={() => navigate('/koleksi')}>Kembali</button>
+    </div>
+
   )
-}
+  }
