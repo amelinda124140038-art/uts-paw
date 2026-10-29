@@ -3,90 +3,90 @@
     "id": "1",
     "judul": "Lidah Mertua",
     "kategori": "Tanaman In-door / Outdoor",
-    "Nama Latin": "Sansevieria trifasciata",
-    "Frekuensi Siram": 1,
-    "Kebutuhan Cahaya": "Sedang hingga Penuh"
+    "namaLatin": "Sansevieria trifasciata",
+    "frekuensiSiram": 1,
+    "kebutuhanCahaya": "Sedang hingga Penuh"
   },
 
   {
     "id": "2",
     "judul": "Janda Bolong",
     "kategori": "Tanaman In-door",
-    "Nama Latin": "Monstera adansonii",
-    "Frekuensi Siram": 2,
-    "Kebutuhan Cahaya": "Sedang"
+    "namaLatin": "Monstera adansonii",
+    "frekuensiSiram": 2,
+    "kebutuhanCahaya": "Sedang"
   },
 
   {
     "id": "3",
     "judul": "Monstera Deliciosa",
     "kategori": "Tanaman In-door",
-    "Nama Latin": "Monstera deliciosa",
-    "Frekuensi Siram": 2,
-    "Kebutuhan Cahaya": "Sedang"
+    "namaLatin": "Monstera deliciosa",
+    "frekuensiSiram": 2,
+    "kebutuhanCahaya": "Sedang"
   },
 
   {
     "id": "4",
     "judul": "Sirih Gading",
     "kategori": "Tanaman Gantung/In-door",
-    "Nama Latin": "Epipremnum aureum",
-    "Frekuensi Siram": 2,
-    "Kebutuhan Cahaya": "Sedang"
+    "namaLatin": "Epipremnum aureum",
+    "frekuensiSiram": 2,
+    "kebutuhanCahaya": "Sedang"
   },
 
   {
     "id": "5",
     "judul": "Lili Perdamaian",
     "kategori": "Tanaman In-door",
-    "Nama Latin": "Spathiphyllum wallisii",
-    "Frekuensi Siram": 3,
-    "Kebutuhan Cahaya": "Teduh"
+    "namaLatin": "Spathiphyllum wallisii",
+    "frekuensiSiram": 3,
+    "kebutuhanCahaya": "Teduh"
   },
 
   {
     "id": "6",
     "judul": "Aglaonema",
     "kategori": "Tanaman In-door",
-    "Nama Latin": "Aglaonema commuttaum",
-    "Frekuensi Siram": 2,
-    "Kebutuhan Cahaya": "Teduh"
+    "namaLatin": "Aglaonema commuttaum",
+    "frekuensiSiram": 2,
+    "kebutuhanCahaya": "Teduh"
   },
 
   {
     "id": "7",
     "judul": "Kaktus Koboi",
     "kategori": "Tanaman Out-door/In-door",
-    "Nama Latin": "Cereus peruvianus",
-    "Frekuensi Siram": 2,
-    "Kebutuhan Cahaya": "Penuh"
+    "namaLatin": "Cereus peruvianus",
+    "frekuensiSiram": 2,
+    "kebutuhanCahaya": "Penuh"
   },
 
   {
     "id": "8",
     "judul": "Keladi Hias",
     "kategori": "Tanaman Out-door/ Semi In-door",
-    "Nama Latin": "Caladium bicolor",
-    "Frekuensi Siram": 3,
-    "Kebutuhan Cahaya": "Sedang"
+    "namaLatin": "Caladium bicolor",
+    "frekuensiSiram": 3,
+    "kebutuhanCahaya": "Sedang"
   },
 
   {
     "id": "9",
     "judul": "Bunga Kertas",
     "kategori": "Tanaman Out-door",
-    "Nama Latin": "Bougainvillea spectabilis",
-    "Frekuensi Siram": 4,
-    "Kebutuhan Cahaya": "Penuh"
+    "namaLatin": "Bougainvillea spectabilis",
+    "frekuensiSiram": 4,
+    "kebutuhanCahaya": "Penuh"
   },
 
   {
     "id": "10",
     "judul": "Paku Tanduk Rusa",
     "kategori": "Tanaman Tenmpel/ Gantung",
-    "Nama Latin": "Platycerium bifurcatum",
-    "Frekuensi Siram": 2,
-    "Kebutuhan Cahaya": "Teduh"
+    "namaLatin": "Platycerium bifurcatum",
+    "frekuensiSiram": 2,
+    "kebutuhanCahaya": "Teduh"
   }
 ]
 
