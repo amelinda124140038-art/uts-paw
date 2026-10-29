@@ -1,12 +1,11 @@
-// import { useState } from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import useKoleksi from '../hooks/useKoleksi.js'
-
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import useKoleksi from '../hooks/useKoleksi.js'
 
 const AWAL = { judul: '', kategori: 'Kuliah', tenggat: '', prioritas: 'sedang' }
 
 export default function Tambah() {
-  const { tambah } = useKoleksi()
+  const { tambahKoleksi } = useKoleksi()
   const navigate = useNavigate()
   const [form, setForm] = useState(AWAL)
   const [galat, setGalat] = useState('')
@@ -19,7 +18,7 @@ export default function Tambah() {
       setGalat('Judul wajib diisi, minimal 3 karakter.')
       return
     }
-    tambah({ ...form, judul: form.judul.trim() })
+    tambahKoleksi({ ...form, judul: form.judul.trim() })
     navigate('/koleksi')
   }
 
