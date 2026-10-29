@@ -13,19 +13,16 @@ test('rute tidak dikenal menampilkan 404', () => {
   expect(screen.getByRole('heading', { name: '404' })).toBeInTheDocument()
 })
 
-// --- 5 TEST BUATAN SENDIRI (MENGGUNAKAN VITEST & TESTING LIBRARY) ---
-
-// Test 1: Menampilkan halaman utama
 test('menampilkan halaman utama aplikasi', () => {
   render(
     <MemoryRouter initialEntries={['/']}>
       <App />
     </MemoryRouter>
   )
-  expect(screen.getByText(/Koleksi Tanaman/i)).toBeInTheDocument()
+  expect(screen.getByText('banner')).toBeInTheDocument()
 })
 
-// Test 2: Menampilkan judul header
+
 test('menampilkan teks judul header', () => {
   render(
     <MemoryRouter initialEntries={['/']}>
@@ -35,7 +32,7 @@ test('menampilkan teks judul header', () => {
   expect(screen.getByRole('banner')).toBeInTheDocument()
 })
 
-// Test 3: Menampilkan navigasi
+
 test('menampilkan menu navigasi aplikasi', () => {
   render(
     <MemoryRouter initialEntries={['/']}>
@@ -45,7 +42,7 @@ test('menampilkan menu navigasi aplikasi', () => {
   expect(screen.getByRole('navigation')).toBeInTheDocument()
 })
 
-// Test 4: Menampilkan elemen footer
+
 test('menampilkan footer di bagian bawah', () => {
   render(
     <MemoryRouter initialEntries={['/']}>
@@ -55,7 +52,7 @@ test('menampilkan footer di bagian bawah', () => {
   expect(screen.getByRole('contentinfo')).toBeInTheDocument()
 })
 
-// Test 5: Menampilkan halaman form tambah data
+
 test('menampilkan halaman form tambah tanaman', () => {
   render(
     <MemoryRouter initialEntries={['/tambah']}>
