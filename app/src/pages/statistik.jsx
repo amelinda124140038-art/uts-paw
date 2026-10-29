@@ -1,9 +1,16 @@
-// import useKoleksi from '../hooks/useKoleksi.js'
-
+import useKoleksi from '../hooks/useKoleksi.js'
 
 export default function Statistik() {
-  const { items } = useKoleksi()
-  const perKategori = items.reduce((hitung, { kategori }) => ({ ...hitung, [kategori]: (hitung[kategori] ?? 0) + 1 }), {})
+  const { koleksi, items } = useKoleksi()
+  const data = koleksi || items || []
+
+  const perKategori = data.reduce(
+    (hitung, { kategori }) => ({
+      ...hitung,
+      [kategori]: (hitung[kategori] ?? 0) + 1,
+    }),
+    {}
+  )
 
   return (
     <section>
@@ -27,13 +34,11 @@ export default function Statistik() {
           <tfoot>
             <tr>
               <th>Total</th>
-              <td>{items.length}</td>
+              <td>{data.length}</td>
             </tr>
           </tfoot>
         </table>
       </div>
     </section>
-
-        )
-
+  )
 }
