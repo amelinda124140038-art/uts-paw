@@ -20,7 +20,7 @@ export default function Detail() {
   }
 
   const handleHapus = () => {
-    if (typeof hapuskoleksi === 'function') {
+    if (typeof hapusKoleksi === 'function') {
         hapusKoleksi(item.id)
     } else if (typeof hapus === 'function') {
         hapus(item.id)
