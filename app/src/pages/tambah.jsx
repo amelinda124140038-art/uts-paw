@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
-import './Tambah.css'
+import './tambah.css'
 
 const AWAL = { nama: '', kategori: 'Outdoor, Indoor', tenggat: '', prioritas: 'sedang' }
 
