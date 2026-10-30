@@ -2,8 +2,8 @@ export default function KotakPencarian({ nilai, onUbah }) {
   return (
     <input
       type="search"
-      placeholder="Cari judul..."
-      aria-label="Cari judul"
+      placeholder="Cari Tanaman..."
+      aria-label="Cari Tanaman"
       value={nilai}
       onChange={(e) => onUbah(e.target.value)}
     />

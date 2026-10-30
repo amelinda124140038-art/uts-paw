@@ -12,7 +12,7 @@ export default function Detail() {
   if (!item) {
     return (
         <div className="container">
-            <h2>Item tidak ditemukan</h2>
+            <h2>Tanaman tidak ditemukan</h2>
             <button onClick={() => navigate('/koleksi')}>Kembali ke koleksi</button>
         </div>
     )
@@ -30,14 +30,14 @@ export default function Detail() {
 
   return (
     <div className='container'>
-        <h1>Detail Tanamann</h1>
+        <h1>Detail Tanaman</h1>
 
         <h2>{item.judul}</h2>
         <p><strong>Kategori:</strong> {item.kategori}</p>
 
         <p><strong>Nama Latin:</strong> {item.namaLatin}</p>
-        <p><strong>Frekuensi Siram:</strong> {item.frekuensiSiram}</p>
-        <p><strong>Kebutuhan Cahaya:</strong> {item.kebutuhanCahaya}</p>
+        <p><strong>Frekuensi Siram:</strong> {item.frekuensiSiram || item.siram || '-'}</p>
+        <p><strong>Kebutuhan Cahaya:</strong> {item.kebutuhanCahaya || item.cahaya || '-'}</p>
 
         <button onClick={handleHapus}>Hapus</button>
         <button onClick={() => navigate('/koleksi')}>Kembali</button>
